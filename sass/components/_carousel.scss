@@ -1,0 +1,17 @@
+.carousel {
+    padding: 1rem 0;
+    overflow-x: auto;
+    .carousel-inner {
+        display: flex;
+        overflow: hidden;
+        justify-content: space-between;
+        .carousel-item {
+            min-width: 7.5rem;
+            min-height: 10rem;
+            border-radius: .75rem;
+            display: flex;
+            flex-direction: column;
+            gap: .5rem;
+        }
+    }
+}

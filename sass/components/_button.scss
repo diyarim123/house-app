@@ -1,0 +1,36 @@
+@use 'sass:math';
+
+.find-btn {
+  padding: $base-padding $base-padding * 2;
+  cursor: pointer;
+  background-color: $primary;
+  border-radius: $base-border-radius;
+  color: white;
+  &:hover {
+    background-color: lighten($primary, 5%);
+  }
+}
+
+.burger-btn {
+  font-size: 1.5rem;
+  cursor: pointer;
+  @include sm {
+    display: block;
+  }
+  @include md {
+    display: none;
+  }
+}
+.arrow-next {
+  padding: .3rem .75rem;
+  border-radius: .5rem;
+  background-color: #FFDBAA;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  cursor: pointer;
+}
+.arrow-prev {
+  padding: .3rem .75rem;
+  border-radius: .5rem;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  cursor: pointer;
+}
